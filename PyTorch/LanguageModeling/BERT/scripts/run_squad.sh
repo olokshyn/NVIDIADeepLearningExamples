@@ -17,7 +17,7 @@ echo "Container nvidia build = " $NVIDIA_BUILD_ID
 
 init_checkpoint=${1:-"/workspace/bert/checkpoints/bert_uncased.pt"}
 epochs=${2:-"2.0"}
-batch_size=${3:-"4"}
+batch_size=${3:-"120"}
 learning_rate=${4:-"3e-5"}
 warmup_proportion=${5:-"0.1"}
 precision=${6:-"fp16"}

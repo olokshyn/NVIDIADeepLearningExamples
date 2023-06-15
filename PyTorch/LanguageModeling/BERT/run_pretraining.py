@@ -200,7 +200,7 @@ def parse_arguments():
                         type=float,
                         help="Proportion of training to perform linear learning rate warmup for. "
                              "E.g., 0.1 = 10%% of training.")
-    parser.add_argument("--local_rank",
+    parser.add_argument("--local-rank",
                         type=int,
                         default=os.getenv('LOCAL_RANK', -1),
                         help="local_rank for distributed training on gpus")

@@ -787,7 +787,7 @@ def main():
     parser.add_argument("--do_lower_case",
                         action='store_true',
                         help="Whether to lower case the input text. True for uncased models, False for cased models.")
-    parser.add_argument("--local_rank",
+    parser.add_argument("--local-rank",
                         type=int,
                         default=os.getenv('LOCAL_RANK', -1),
                         help="local_rank for distributed training on gpus")

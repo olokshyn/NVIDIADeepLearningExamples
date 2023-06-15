@@ -14,7 +14,7 @@
 # limitations under the License.
 
 echo "Container nvidia build = " $NVIDIA_BUILD_ID
-train_batch_size=${1:-8192}
+train_batch_size=${1:-60160}
 learning_rate=${2:-"6e-3"}
 precision=${3:-"fp16"}
 num_gpus=${4:-$(nvidia-smi -L | wc -l)}
